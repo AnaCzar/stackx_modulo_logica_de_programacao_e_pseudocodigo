@@ -1,0 +1,70 @@
+tarefa 2 IF Idade e Peso
+2. Idade e peso (IF)
+Vencimento Sem prazo de entrega Pontos 10 Enviando uma caixa de entrada de texto ou um upload de arquivo
+O que
+
+Escreva o Pseudocódigo para o enunciado abaixo e faça o upload aqui. Não faça utilizando software de Portugol, é apenas texto com instruções em Pseudocódigo. Depois dessa entrega, faremos em Python.
+
+Faça um programa que receba a idade e o peso de uma pessoa. De acordo com a tabela a seguir, verifique e mostre em qual grupo de risco essa pessoa se encaixa.
+************************************************
+
+inicio
+Real Peso
+Inteiro GrupoRisco, Idade
+
+
+Escreva("Digite sua Idade em anos(completos)")
+Leia(Idade)
+Escreva("Digite seu Peso em Kg:")
+Leia(Peso)
+
+  Se Idade<20, faça
+    Se Peso<=60
+        GrupoRisco=9
+        Escreva("Sua classe de risco é:", GrupoRisco)
+    Fim-Se
+
+    Se Peso>60 e Peso<=90
+      GrupoRisco=8
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim_Se
+
+    Senao
+      GrupoRisco=7
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim_Senao
+  Fim-Se
+
+  Se Idade>=20 e Idade<50
+    Se Peso<=60
+      GrupoRisco=6
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim-Se
+
+    Se Peso>60 e Peso<=90
+      GrupoRisco=5
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim_Se
+
+    Senao
+      GrupoRisco=4
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim_Senao
+ Fim_Se
+
+  Se Idade>=50
+    Se Peso<=60
+      GrupoRisco=3
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim-Se
+
+    Se Peso>60 e Peso<=90
+      GrupoRisco=2
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim-Se
+
+    Senao
+      GrupoRisco=1
+      Escreva("Sua classe de risco é:", GrupoRisco, "\n")
+    Fim_Senao
+  Fim-Se

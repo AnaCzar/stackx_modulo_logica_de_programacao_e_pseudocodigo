@@ -1,0 +1,28 @@
+
+declaração de variaveis
+Real H_Extras, H_Faltas, H_Totais
+
+Inicio
+Escreva:("Digite a quantidade de Horas Extras realizadas:")
+Leia(H_Extras)
+Escreva:("Digite a quantidade de Horas Faltas:")
+Leia(H_Faltas)
+
+H_Totais<-(H_Extras*60)-(2/3(H_Faltas*60))
+    Se H_Totais>=2401, faça
+      Escreva:"O funcionário alcançou o total de"= H_Totais e "o valor da gratificação é R$500,00"
+        Se H_Totais>=1801 e <2401, faça
+          Escreva:"O funcionário alcançou o total de"= H_Totais e "o valor da gratificação é R$400,00"
+            Se H_Totais>=1201 e <1801, faça
+              Escreva:"O funcionário alcançou o total de"= H_Totais e "o valor da gratificação é R$300,00"
+                Se H_Totais>=600 e <1201, faça
+                  Escreva:"O funcionário alcançou o total de"= H_Totais e "o valor da gratificação é R$200,00"
+                     Se H_Totais<600, faça
+                        Escreva:"O funcionário alcançou o total de"= H_Totais e "o valor da gratificação é R$100,00"
+                    Fim_Se
+                Fim_Se
+             Fim_Se
+        Fim_Se
+    Fim_Se
+
+Fim

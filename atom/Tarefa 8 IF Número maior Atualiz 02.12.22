@@ -1,0 +1,28 @@
+8. Número maior (IF)
+Escreva um programa para ler 2 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+Refeito em 02/12/22
+**************************
+
+
+Inicio
+
+Var
+PrimeiroValor, SegundoValor: Reais
+PrimeiroValor = 0
+SegundoValor = 0
+
+Enquanto PrimeiroValor = SegundoValor, Faça:
+	Escreva:("Digite o 1º Valor")
+	Leia (PrimeiroValor)
+	Escreva:("Digite o 2º Valor (não repita os valores)")
+	Leia (SegundoValor)
+FimEnquanto
+
+Se PrimeiroValor>SegundoValor, então
+	Escreva:("O maior valor é:", PrimeiroValor)
+	Senão, Faça:
+		Escreva:("O maior valor é:", SegundoValor)
+	FimSenão
+FimSe
+
+Fim

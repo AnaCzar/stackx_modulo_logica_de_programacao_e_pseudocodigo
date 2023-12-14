@@ -1,0 +1,38 @@
+12. 3 valores em ordem (IF)
+Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais)
+e escrevê-los em ordem crescente.
+
+refeito em 05/12/22
+
+***********************************************************************
+Inicio
+
+Var
+X, Y, Z, MaiorNum, MenorNum: Real
+
+Escreva:("Digite um número para X")
+Leia (X)
+Escreva:("Digite um número para Y(não repita os números)")
+Leia (Y)
+Escreva:("Digite um número para Z(não repita os números)")
+Leia (Z)
+
+	Se X>Y E Y>Z, Então
+		Escreva:(X, Y, Z)
+			Se X>Z E Z>Y, Então
+				Escreva:(X, Z, Y)
+					Se Y>X E X>Z, Então
+						Escreva:(Y, X, Z)
+							Se Y>Z E Z>X, Então
+								Escreva:(Y, Z, X)
+									Se Z>Y E Y>X, Então
+										Escreva:(Z, Y, X)
+											Senão,
+												Escreva(Z, X, Y)
+								      FimSenao
+							  	FimSe
+							 FimSe
+				 		FimSe
+				FimSe
+		FimSe
+Fim

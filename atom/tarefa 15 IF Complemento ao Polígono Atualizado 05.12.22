@@ -1,0 +1,38 @@
+15. Complemento ao Polígono da tarefa 14 (IF)
+
+Acrescente as seguintes mensagens à solução da tarefa 14 conforme o caso.
+Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO.
+Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
+
+REFEITO EM 05/12/22
+*******************************************************
+Inicio
+
+Var
+
+Area3, MedLado: Reais
+NumeroLado: Inteiro
+
+Escreva:("Quantos lados tem o Polígono? (digite um numero de 3 a 5)")
+Leia (NumeroLado)
+Escreva:("Qual a medida dos Lados do Polígono(em cm)?")
+Leia(MedLado)
+
+	Se NumeroLado==3, Então
+		Area<-((MedLado*MedLado)*1,7)/4
+	  Escreva:("Seu Polígono é um TRIÂNGULO. A área dele é:",Area3)
+			Se NumeroLado==4, Então
+				Area<-MedLado*MedLado
+		    Escreva:("Seu Polígono é um QUADRADO. A área dele é:",Area4)
+					Se NumeroLado==5, Então
+		    		Escreva:("Seu Polígono é um PENTÁGONO")
+		    			Se NumeroLado<3, Então
+								Escreva:("Você digitou Numero de lados inferior a 3, portanto: Não é um POLIGONO")
+									Senão,
+									 Escreva:("Você digitou Numero de lados superior a 5, portanto: POLÍGONO NÃO IDENTIFICADO")
+									FimSenão
+    	    		FimSe
+    	 		FimSe
+  		FimSe
+	FimSe
+Fim

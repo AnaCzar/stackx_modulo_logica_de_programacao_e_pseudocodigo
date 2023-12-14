@@ -1,0 +1,34 @@
+17. Triângulo (IF)
+
+Escreva um programa que leia as medidas dos lados de um triângulo e escreva se ele é Equilátero, Isósceles ou Escaleno.
+Sendo que:
+Triângulo Equilátero: possui os 3 lados iguais.
+Triângulo Isóscele: possui 2 lados iguais.
+Triângulo Escaleno: possui 3 lados diferentes.
+
+refeito EM 06/12/22
+
+**************************************************************************
+
+Inicio
+
+Var
+MedLado1, MedLado2, MedLado3: Reais
+
+Escreva:("Digite a medida do lado 1 do Triângulo")
+Leia(MedLado1)
+Escreva:("Digite a medida do lado 2 do Triângulo")
+Leia(MedLado2)
+Escreva:("Digite a medida do lado 3 do Triângulo")
+Leia(MedLado3)
+
+	Se MedLado1==MedLado2 E MedLado2==MedLado3, Então
+	  Escreva:("Este é um Triângulo Equilátero")
+			Se MedLado1!=MedLado2 E MedLado2!=Medlado3 E MedLado1!=MedLado3, Então
+	      Escreva:("Este é um Triângulo Escaleno")
+	    		Senão,
+	    			Escreva:("Este é um Triângulo Isósceles")
+	    		FimSenão
+	    FimSe
+	FimSe
+Fim

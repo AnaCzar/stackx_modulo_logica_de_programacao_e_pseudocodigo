@@ -1,0 +1,43 @@
+Tarefa 4 IF Salario Bruto
+
+Faça um programa que receba o salário bruto de um funcionário e, usando a tabela a seguir, calcule e mostre o valor a receber. Sabe-se que este é composto pelo salário bruto acrescido de gratificação e descontado o imposto de 7% sobre o salário.
+
+""
+A_Receber = (Salario Bruto - (Salario Bruto*0,07)) + Gratificação
+
+""
+
+Inicio
+
+Var
+Salario_Bruto, A_Receber: Real
+Gratificação: Inteiro
+
+Escreva:("Digite o Valor do Salario_Bruto");
+Leia:(Salario_Bruto);
+
+    	Se Salario_Bruto<=350, faça;
+      		Gratificação<-100,00;
+     		  A_Receber = (Salario_Bruto - (Salario Bruto*0,07)) + Gratificação;
+     		  Escreva:("O Funcionário tem a Receber: R$", A_Receber);
+
+              Se Salario_Bruto>350 E Salario_Bruto<600,00, faça;
+                Gratificação<-75,00;
+                A_Receber = (Salario_Bruto - (Salario Bruto*0,07)) + Gratificação;
+                Escreva: ("O Funcionário tem a Receber: R$", A_Receber);
+
+                    Se Salario_Bruto>=600 E Salario_Bruto<901,00, faça;
+                      Gratificação<-50,00;
+                      A_Receber = (Salario_Bruto - (Salario Bruto*0,07)) + Gratificação;
+                      Escreva: ("O Funcionário tem a Receber: R$", A_Receber);
+
+                          Senão
+                            Gratificação<-35,00;
+                            A_Receber = (Salario_Bruto - (Salario Bruto*0,07)) + Gratificação;
+                            Escreva: ("O Funcionário tem a Receber: R$ ", A_Receber);
+
+                          Fim_Senao
+                    Fim_Se
+              Fim-Se
+        Fim-Se
+Fim

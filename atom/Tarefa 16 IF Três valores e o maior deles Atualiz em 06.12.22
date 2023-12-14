@@ -1,0 +1,51 @@
+16. Três valores e o maior deles (IF)
+Escreva um programa para ler 3 valores inteiros e escrever o maior deles. Considere que o usuário não informará
+valores iguais.
+
+Algoritmo "Três valores e o maior deles"
+*******************************************************************
+Inicio
+
+Var
+X, Y, Z,: Real
+Contador = 3
+Cont = 3
+
+
+Escreva:("Digite um número para X")
+Leia (X)
+
+	Enquanto Contador>0, Faça
+		Escreva:("Digite um número para Y(não repita os números)")
+		Leia (Y)
+			Se Y == X, Então
+				Escreva:("O número já existe. Digite outro número", "Você tem ", Contador, "Tentativas")
+				Contador = Contador -1
+			FimSe
+					Senão,
+						Break
+					FimSenao
+	 FimEnquanto
+
+   Enquanto Cont > 0, Faça
+			Escreva:("Digite um número para Z(não repita os números)")
+			Leia (Z)
+				Se Z == X OU Z == Y , Então
+					Escreva:("O número já existe. Digite outro número", "Você tem ", Cont, "Tentativas")
+					Cont = Cont -1
+				FimSe
+						Senão,
+							Break
+						FimSenao
+		  FimEnquanto
+
+   Se X>Y E X>Z, Então
+	 	Escreva:(X, "é o maior número")
+			Se Y>X E Y>Z, Então
+				Escreva:(Y, "é o maior número")
+					Se Z>Y E Z>X, Então
+						Escreva:(Z, "é o maior número")
+					FimSenao
+			FimSe
+   FimSe
+Fim

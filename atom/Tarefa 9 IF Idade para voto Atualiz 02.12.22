@@ -1,0 +1,31 @@
+9. Idade para voto (IF)
+Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano
+(não é necessário considerar o mês em que ela nasceu).
+atualizado em 02.12.22
+
+*******************************************
+
+Inicio
+
+Var
+AnoNascimento, CalculoIdade, AnoAtual: Inteiro
+AnoAtual = 2022
+
+Escreva:("Digite seu ano de nascimento")
+Leia (AnoNascimento)
+
+CalculoIdade = AnoAtual-AnoNascimento
+
+	Se CalculoIdade >=18 e CalculoIdade<70, Então
+	 Escreva:("Seu voto é obrigatório neste ano")
+
+ 		Se CalculoIdade >=70 ou CalculoIdade < 18 e CalculoIdade >= 16 Então
+	  	 Escreva:("Seu voto é facultativo neste ano")
+
+	  		Senão,
+	  		Escreva:("Você ainda não está autorizado a votar neste ano")
+
+			  FimSenão
+	  Fim_se
+  Fim_Se
+Fim
